@@ -6,6 +6,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@heroicons/react": "^2.0.18",
+    "heroicons": "^2.0.18",
     "next": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -16,6 +18,9 @@
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.5",
     "@types/styled-components": "^5.1.25",
+    "autoprefixer": "^10.4.15",
+    "postcss": "^8.4.30",
+    "tailwindcss": "^3.3.3",
     "typescript": "^4.7.4"
   }
 }

@@ -1,0 +1,151 @@
+/* Sequel Sans Black Body */
+@font-face {
+  font-family: "Sequel Sans";
+  src: url("/fonts/Sequel Sans TTF/Sequel Sans Black Body.ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Sequel Sans Heavy Body */
+@font-face {
+  font-family: "Sequel Sans";
+  src: url("/fonts/Sequel Sans TTF/Sequel Sans Heavy Body.ttf");
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Sequel Sans Bold Body */
+@font-face {
+  font-family: "Sequel Sans";
+  src: url("/fonts/Sequel Sans TTF/Sequel Sans Bold Body.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Sequel Sans Semi Bold Body */
+@font-face {
+  font-family: "Sequel Sans";
+  src: url("/fonts/Sequel Sans TTF/Sequel Sans Semi Bold Body.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Sequel Sans Medium Body */
+@font-face {
+  font-family: "Sequel Sans";
+  src: url("/fonts/Sequel Sans TTF/Sequel Sans Medium Body.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Sequel Sans Medium Display */
+@font-face {
+  font-family: "Sequel Sans";
+  src: url("/fonts/Sequel Sans TTF/Sequel Sans Medium Disp.ttf");
+  font-weight: 415;
+  font-style: normal;
+}
+
+/* Sequel Sans Semi Bold Display */
+@font-face {
+  font-family: "Sequel Sans";
+  src: url("/fonts/Sequel Sans TTF/Sequel Sans Semi Bold Disp.ttf");
+  font-weight: 420;
+  font-style: normal;
+}
+
+/* Sequel Sans Book Body */
+@font-face {
+  font-family: "Sequel Sans";
+  src: url("/fonts/Sequel Sans TTF/Sequel Sans Book Body.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Sequel Sans Light Body */
+@font-face {
+  font-family: "Sequel Sans";
+  src: url("/fonts/Sequel Sans TTF/Sequel Sans Light Body.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Sequel Sans Roman Body */
+@font-face {
+  font-family: "Sequel Sans";
+  src: url("/fonts/Sequel Sans TTF/Sequel Sans Roman Body.ttf");
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* Inter Black */
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-Black.ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Inter Extra Bold */
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-ExtraBold.ttf");
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Inter Bold */
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Inter Semi Bold */
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Inter Medium */
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Inter Regular */
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Inter Light */
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Inter Extra Light */
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-ExtraLight.ttf");
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* Inter Thin */
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-Thin.ttf");
+  font-weight: 100;
+  font-style: normal;
+}
