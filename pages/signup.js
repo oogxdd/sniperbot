@@ -105,7 +105,7 @@ export default function SignupPage() {
 }
 
 const Image = styled.img.attrs({
-  src: "/icons/login-image.png",
+  src: "/images/signup-image.png",
   className: "hidden md:block",
 })`
   width: 500px;

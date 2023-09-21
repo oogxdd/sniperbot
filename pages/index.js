@@ -6,10 +6,11 @@ import styled from "styled-components";
 export default function Home() {
   return (
     <div className="flex flex-col m-16 space-y-8 text-lg">
+      <LinkStyled href="/signup">signup</LinkStyled>
+      <LinkStyled href="/login">login</LinkStyled>
       <LinkStyled href="/home">home</LinkStyled>
       <LinkStyled href="/details">details</LinkStyled>
-      <LinkStyled href="/login">login</LinkStyled>
-      <LinkStyled href="/signup">signup</LinkStyled>
+      <LinkStyled href="/popup">popup</LinkStyled>
     </div>
   );
 }

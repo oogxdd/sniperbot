@@ -1,24 +1,26 @@
 import styled from "styled-components";
 
-const ButtonComponent = ({
+export const Button = ({
   primary = false,
   rounded = false,
   children,
   style = {},
   ...props
 }) => {
+  console.log(rounded);
+  console.log(props);
   if (rounded) {
     return (
-      <ButtonRounded style={style} {...props}>
+      <ButtonRounded style={style} primary={primary} {...props}>
         {children}
       </ButtonRounded>
     );
   }
 
   return (
-    <Button primary={primary} {...props}>
+    <ButtonStyled primary={primary} {...props}>
       {children}
-    </Button>
+    </ButtonStyled>
   );
 };
 
@@ -27,25 +29,54 @@ const ButtonRounded = styled.button.attrs({
 })`
   padding: 10px 18px 11px;
   border-radius: 99px;
+  width: max-content;
+  z-index: 1;
+
   ${(props) =>
     props.theme.value === "dark"
       ? `
-background: #45464C;
-color: #FFF;
-  `
+        background: #45464C;
+        color: #FFF;
+      `
       : `
-
-  background: ${props.theme.buttonBg};
-  color: ${props.theme.textPrimary};
-  border: 1px solid #d8dbdf;
+        background: ${props.theme.buttonBg};
+        color: ${props.theme.textPrimary};
+        border: 1px solid #d8dbdf;
   `}
-  width: max-content;
-  z-index: 1;
-`;
-// margin-left: 10px;
-// width: min-content;
 
-export const Button = styled.button.attrs({
+  ${(props) => {
+    if (props.primary) {
+      return `
+        background: #1E56C3;
+        color: #fff;
+      `;
+    } else if (props.subtle) {
+      if (props.theme.value === "dark") {
+        return `
+          color: #959598;
+      `;
+      }
+      if (props.theme.value === "light") {
+        return `
+          border: 1px solid rgba(0, 0, 0, 0.15);
+          background: #FFF;
+          color: #5B636C;
+      `;
+      }
+    } else {
+      // if (props.theme.value === "dark") {
+      //   return `
+      // `;
+      // }
+      // if (props.theme.value === "light") {
+      //   return `
+      // `;
+      // }
+    }
+  }}
+`;
+
+const ButtonStyled = styled.button.attrs({
   className: "flex items-center justify-center",
 })`
   font-family: Sequel Sans;
@@ -59,7 +90,6 @@ export const Button = styled.button.attrs({
   z-index: 1;
 
   ${(props) => {
-    console.log(props);
     if (props.primary) {
       if (props.theme.value === "dark") {
         return `
@@ -95,4 +125,4 @@ export const Button = styled.button.attrs({
   }}
 `;
 
-export default ButtonComponent;
+export default Button;

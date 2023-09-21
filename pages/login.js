@@ -100,7 +100,7 @@ export default function LoginPage() {
 }
 
 const Image = styled.img.attrs({
-  src: "/icons/signup-image.png",
+  src: "/images/login-image.png",
   className: "hidden md:block",
 })`
   width: 500px;

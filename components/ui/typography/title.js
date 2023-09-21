@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Title = styled.h1.attrs({ className: "" })`
-  color: #112232;
+  color: ${(props) => (props.theme.value === "dark" ? "#fff" : "#112232")};
   font-family: Sequel Sans;
   font-size: 28px;
   font-style: normal;
