@@ -9,39 +9,6 @@ import {
   Logo,
 } from "@/components/ui";
 
-const ButtonPrimary = styled(Button).attrs({
-  className: "flex items-center justify-center",
-})`
-  border-radius: 10px;
-  background: #017fb2;
-  color: #fff;
-`;
-
-const ButtonSecondary = styled(Button).attrs({
-  className: "flex items-center justify-center",
-})`
-  color: #017fb2;
-`;
-
-const Form = styled.div.attrs({
-  className: "flex flex-col items-start justify-between md:justify-start",
-})`
-  width: 390px;
-  margin-top: 200px;
-
-  @media (max-width: 768px) {
-    margin-top: 0px;
-    width: 100%;
-    height: 100%;
-    padding: 20px 20px 26px 20px;
-  }
-`;
-
-// const PageContainer =  styled.div.attrs({ className: '' })``
-const PageContainer = styled.div.attrs({ className: "" })`
-  background: ${(props) => props.theme.mainBg};
-`;
-
 export default function LoginPage() {
   const router = useRouter();
 
@@ -105,4 +72,45 @@ const Image = styled.img.attrs({
 })`
   width: 500px;
   background: gray;
+`;
+
+const ButtonPrimary = styled(Button).attrs({
+  className: "flex items-center justify-center",
+})`
+  border-radius: 10px;
+  background: #017fb2;
+  color: #fff;
+
+  :hover {
+    background: ${(props) => props.theme.tealHover} !important;
+  }
+
+  :focus {
+    background: ${(props) => props.theme.tealFocus} !important;
+  }
+`;
+
+const ButtonSecondary = styled(Button).attrs({
+  className: "flex items-center justify-center",
+})`
+  color: #017fb2;
+`;
+
+const Form = styled.div.attrs({
+  className: "flex flex-col items-start justify-between md:justify-start",
+})`
+  width: 390px;
+  margin-top: 200px;
+
+  @media (max-width: 768px) {
+    margin-top: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 20px 20px 26px 20px;
+  }
+`;
+
+// const PageContainer =  styled.div.attrs({ className: '' })``
+const PageContainer = styled.div.attrs({ className: "" })`
+  background: ${(props) => props.theme.mainBg};
 `;

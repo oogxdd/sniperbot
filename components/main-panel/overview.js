@@ -1,33 +1,38 @@
+import { useState } from "react";
 import styled from "styled-components";
 import { Card, Label } from "@/components/ui";
 
-const Overview = ({ taggled = true }) => (
-  <div className="flex flex-col" style={{ marginBottom: 46 }}>
-    <Label>Overview</Label>
-    <OverviewContainer>
-      <div className="flex flex-col w-full">
-        <div className="flex justify-between grid grid-cols-2 md:grid-cols-4 gap-y-5 md:gap-y-0 w-full">
-          <OverviewItem type="name" value="Flash 3.0" />
-          <OverviewItem type="symbol" value="FLASH" />
-          <OverviewItem type="exchange" value="Binance co." />
-          <OverviewItem type="etherscan" value="Transaction" />
-        </div>
-        {taggled && (
-          <div className="flex flex-col" style={{ marginTop: 22 }}>
-            <OverviewItemLabel>Taggled from</OverviewItemLabel>
-            <TaggledContainer>
-              <TaggledValue>mzxF6Qvbm86TuNSb1PMWf8WtknkD4s5T6L</TaggledValue>
-              <CopyButton>
-                <span>Copy</span>
-                <CopyIcon />
-              </CopyButton>
-            </TaggledContainer>
+const Overview = () => {
+  const [taggled, setTaggled] = useState(false);
+
+  return (
+    <div className="flex flex-col" style={{ marginBottom: 46 }}>
+      <Label>Overview</Label>
+      <OverviewContainer onClick={() => setTaggled(!taggled)}>
+        <div className="flex flex-col w-full">
+          <div className="flex justify-between grid grid-cols-2 md:grid-cols-4 gap-y-5 md:gap-y-0 w-full">
+            <OverviewItem type="name" value="Flash 3.0" />
+            <OverviewItem type="symbol" value="FLASH" />
+            <OverviewItem type="exchange" value="Binance co." />
+            <OverviewItem type="etherscan" value="Transaction" />
           </div>
-        )}
-      </div>
-    </OverviewContainer>
-  </div>
-);
+          {taggled && (
+            <div className="flex flex-col" style={{ marginTop: 22 }}>
+              <OverviewItemLabel>Taggled from</OverviewItemLabel>
+              <TaggledContainer>
+                <TaggledValue>mzxF6Qvbm86TuNSb1PMWf8WtknkD4s5T6L</TaggledValue>
+                <CopyButton>
+                  <span>Copy</span>
+                  <CopyIcon />
+                </CopyButton>
+              </TaggledContainer>
+            </div>
+          )}
+        </div>
+      </OverviewContainer>
+    </div>
+  );
+};
 
 const TaggledContainer = styled.div.attrs({
   className: "flex w-full justify-between items-center",

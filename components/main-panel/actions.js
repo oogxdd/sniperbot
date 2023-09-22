@@ -1,26 +1,42 @@
 import styled from "styled-components";
+import { useState } from "react";
 import { useUI } from "@/hooks";
 import { Button } from "@/components/ui";
 
 import DislikeIconSource from "@/assets/icons/face-frown.svg";
 import DisabledIconSource from "@/assets/icons/minus-circle.svg";
+import LikeIconSource from "@/assets/icons/heart-rounded.svg";
+
+// #F64C4C
+// #F74C4C
+
+const PrimaryButton = styled(Button)`
+  :hover {
+    background: ${(props) => props.theme.tealHover} !important;
+  }
+
+  :active {
+    background: ${(props) => props.theme.tealFocus} !important;
+  }
+`;
 
 const Actions = () => {
   const { showPopup, setShowPopup } = useUI();
+  const [isLiked, setLiked] = useState(false);
 
   return (
     <ActionsContainer className="flex flex-col md:flex-row items-start md:items-center space-y-2.5 md:space-y-0 w-full justify-between">
       <div className="flex items-center space-x-5px md:space-x-2.5">
-        <Button primary onClick={() => setShowPopup(!showPopup)}>
+        <PrimaryButton primary onClick={() => setShowPopup(!showPopup)}>
           Subscribe / buy
-        </Button>
+        </PrimaryButton>
         <Button>Watch</Button>
       </div>
       <div className="flex items-center space-x-5px md:space-x-2.5">
-        <Button type="like">
-          <LikeIcon />
+        <LikeButton liked={isLiked} onClick={() => setLiked(!isLiked)}>
+          <LikeIcon liked={isLiked} />
           <span />I like it
-        </Button>
+        </LikeButton>
         <Button>
           <DislikeIcon />
           Looks bad
@@ -34,6 +50,14 @@ const Actions = () => {
   );
 };
 
+const LikeButton = styled(Button)`
+  ${(props) =>
+    props.liked &&
+    `
+    border: 1px solid #F64C4C !important;
+  `}
+`;
+
 const ActionsContainer = styled.div.attrs({ className: "" })`
   margin-bottom: 46px;
 
@@ -42,10 +66,17 @@ const ActionsContainer = styled.div.attrs({ className: "" })`
   }
 `;
 
-const LikeIcon = styled.img.attrs({
+const LikeIcon = styled(LikeIconSource).attrs({
   className: "mr-1.5",
-  src: "icons/heart-rounded.svg",
-})``;
+})`
+  stroke: ${(props) => (props.theme.value === "dark" ? "#fff" : "#000")};
+  ${(props) =>
+    props.liked &&
+    `
+    stroke: #F74C4C;
+    fill: #F64C4C;
+  `}
+`;
 const DislikeIcon = styled(DislikeIconSource).attrs({
   className: "mr-1.5",
 })`

@@ -33,6 +33,14 @@ background: #19191D;
   color: #017fb2;
 
   `}
+
+  :hover {
+    background: ${(props) => props.theme.hoverBtnBg};
+  }
+
+  :focus {
+    background: ${(props) => props.theme.focusBtnBg};
+  }
 `;
 
 export default AddTokenButton;

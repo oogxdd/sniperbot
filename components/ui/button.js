@@ -18,7 +18,7 @@ export const Button = ({
   }
 
   return (
-    <ButtonStyled primary={primary} {...props}>
+    <ButtonStyled style={style} primary={primary} {...props}>
       {children}
     </ButtonStyled>
   );
@@ -74,6 +74,29 @@ const ButtonRounded = styled.button.attrs({
       // }
     }
   }}
+
+  :hover {
+    background: ${(props) => props.theme.hoverBtnBg};
+  }
+
+  :active {
+    background: ${(props) => props.theme.focusBtnBg};
+  }
+
+  ${(props) =>
+    props.blue &&
+    `
+    background: #1E56C3;
+    color: white;
+
+    :hover {
+      background: #326cde;
+    }
+
+    :focus {
+      background: #1649ab;
+    }
+  `}
 `;
 
 const ButtonStyled = styled.button.attrs({
@@ -95,12 +118,28 @@ const ButtonStyled = styled.button.attrs({
         return `
           background: #017FB2;
           color: #FFF;
+
+          :hover {
+            background: ${(props) => props.theme.tealHover} !important;
+          }
+
+          :active {
+            background: ${(props) => props.theme.tealFocus} !important;
+          }
       `;
       }
       if (props.theme.value === "light") {
         return `
           background: ${props.theme.primary};
           color: #FFF;
+
+          :hover {
+            background: ${(props) => props.theme.tealHover} !important;
+          }
+
+          :active {
+            background: ${(props) => props.theme.tealFocus} !important;
+          }
       `;
       }
     } else {
@@ -123,6 +162,29 @@ const ButtonStyled = styled.button.attrs({
       }
     }
   }}
+
+  :hover {
+    background: ${(props) => props.theme.hoverBtnBg};
+  }
+
+  :active {
+    background: ${(props) => props.theme.focusBtnBg};
+  }
+
+  ${(props) =>
+    props.blue &&
+    `
+    background: #1E56C3;
+    color: white;
+
+    :hover {
+      background: #326cde;
+    }
+
+    :focus {
+      background: #1649ab;
+    }
+  `}
 `;
 
 export default Button;

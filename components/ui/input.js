@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-const InputStyled = styled.input.attrs({ className: "w-full" })`
+const InputStyled = styled.input.attrs({
+  className: "w-full ring-0 outline-0",
+})`
   border-radius: 10px;
 
   ${(props) =>
@@ -18,6 +20,14 @@ const InputStyled = styled.input.attrs({ className: "w-full" })`
     `}
 
   padding: 13px 14px 14px 14px;
+
+:hover {
+  border-color: ${(props) => props.theme.inputBorderHover}};
+}
+
+:focus {
+  border-color: ${(props) => props.theme.inputBorderFocus}};
+}
 `;
 const InputLabel = styled.label.attrs({ className: "" })`
   color: #5b636c;

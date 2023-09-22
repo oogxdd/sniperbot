@@ -40,6 +40,9 @@ const HeaderLinkStyled = styled.a.attrs({ className: "cursor-pointer" })`
   font-weight: 500;
   line-height: normal;
   margin-right: 28px;
+  :hover {
+    opacity: 0.8;
+  }
 `;
 const DropdownIconWrapper = styled.div.attrs({
   className: "inline-flex items-center justify-center",

@@ -3,11 +3,29 @@ import { Title, Subheading, Input, Button, Hint, Logo } from "@/components/ui";
 import { useUI } from "@/hooks";
 
 const BuyNowButton = styled(Button).attrs({ className: "" })`
-  background: ${(props) =>
-    props.theme.value === "dark" ? "#1E56C3" : "#1E56C3"};
   color: white;
   box-shadow: none;
   border: none;
+`;
+// background: ${(props) =>
+//   props.theme.value === "dark" ? "#1E56C3" : "#1E56C3"};
+
+// :hover {
+//   background: #326cde;
+// }
+
+// :focus {
+//   background: #1649ab;
+// }
+
+const RapidButton = styled(Button)`
+  // :hover {
+  //   background: #326cde;
+  // }
+
+  // :focus {
+  //   background: #1649ab;
+  // }
 `;
 
 export default function Popup() {
@@ -20,10 +38,10 @@ export default function Popup() {
           <Title>Buy</Title>
           <div className="flex flex-col w-full space-y-5 md:space-y-26px">
             <div className="flex space-x-1.5">
-              <Button rounded primary>
+              <Button rounded blue>
                 Rapid
               </Button>
-              <Button subtle rounded>
+              <Button rounded subtle>
                 Standart
               </Button>
             </div>
@@ -42,7 +60,7 @@ export default function Popup() {
                 value=""
               />
             </div>
-            <BuyNowButton>Buy now</BuyNowButton>
+            <BuyNowButton blue>Buy now</BuyNowButton>
           </div>
         </Form>
         <Image />
@@ -56,7 +74,7 @@ export default function Popup() {
 }
 
 const PopupContainer = styled.div.attrs({
-  className: "flex justify-between",
+  className: "flex justify-between overflow-scroll",
 })`
   width: 849px;
   border-radius: 16px;
