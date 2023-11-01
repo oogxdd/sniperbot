@@ -1,151 +1,120 @@
-/* Sequel Sans Black Body */
 @font-face {
-  font-family: "Sequel Sans";
-  src: url("/fonts/Sequel Sans TTF/Sequel Sans Black Body.ttf");
-  font-weight: 900;
+  font-family: "ESRebondGrotesque";
+  src: url("/fonts/ES Rebond Grotesque/ESRebondGrotesqueTRIAL-Bold.otf")
+    format("opentype");
+  font-weight: bold;
   font-style: normal;
 }
 
-/* Sequel Sans Heavy Body */
 @font-face {
-  font-family: "Sequel Sans";
-  src: url("/fonts/Sequel Sans TTF/Sequel Sans Heavy Body.ttf");
-  font-weight: 800;
+  font-family: "ESRebondGrotesque";
+  src: url("/fonts/ES Rebond Grotesque/ESRebondGrotesqueTRIAL-Extrabold.otf")
+    format("opentype");
+  font-weight: 800; /* Extrabold */
   font-style: normal;
 }
 
-/* Sequel Sans Bold Body */
 @font-face {
-  font-family: "Sequel Sans";
-  src: url("/fonts/Sequel Sans TTF/Sequel Sans Bold Body.ttf");
-  font-weight: 700;
+  font-family: "ESRebondGrotesque";
+  src: url("/fonts/ES Rebond Grotesque/ESRebondGrotesqueTRIAL-Extralight.otf")
+    format("opentype");
+  font-weight: 200; /* Extralight */
   font-style: normal;
 }
 
-/* Sequel Sans Semi Bold Body */
 @font-face {
-  font-family: "Sequel Sans";
-  src: url("/fonts/Sequel Sans TTF/Sequel Sans Semi Bold Body.ttf");
-  font-weight: 600;
+  font-family: "ESRebondGrotesque";
+  src: url("/fonts/ES Rebond Grotesque/ESRebondGrotesqueTRIAL-Hairline.otf")
+    format("opentype");
+  font-weight: 100; /* Hairline */
   font-style: normal;
 }
 
-/* Sequel Sans Medium Body */
 @font-face {
-  font-family: "Sequel Sans";
-  src: url("/fonts/Sequel Sans TTF/Sequel Sans Medium Body.ttf");
-  font-weight: 500;
+  font-family: "ESRebondGrotesque";
+  src: url("/fonts/ES Rebond Grotesque/ESRebondGrotesqueTRIAL-Light.otf")
+    format("opentype");
+  font-weight: 300; /* Light */
   font-style: normal;
 }
 
-/* Sequel Sans Medium Display */
 @font-face {
-  font-family: "Sequel Sans";
-  src: url("/fonts/Sequel Sans TTF/Sequel Sans Medium Disp.ttf");
-  font-weight: 415;
+  font-family: "ESRebondGrotesque";
+  src: url("/fonts/ES Rebond Grotesque/ESRebondGrotesqueTRIAL-Medium.otf")
+    format("opentype");
+  font-weight: 500; /* Medium */
   font-style: normal;
 }
 
-/* Sequel Sans Semi Bold Display */
 @font-face {
-  font-family: "Sequel Sans";
-  src: url("/fonts/Sequel Sans TTF/Sequel Sans Semi Bold Disp.ttf");
-  font-weight: 420;
+  font-family: "ESRebondGrotesque";
+  src: url("/fonts/ES Rebond Grotesque/ESRebondGrotesqueTRIAL-Regular.otf")
+    format("opentype");
+  font-weight: normal;
   font-style: normal;
 }
 
-/* Sequel Sans Book Body */
 @font-face {
-  font-family: "Sequel Sans";
-  src: url("/fonts/Sequel Sans TTF/Sequel Sans Book Body.ttf");
-  font-weight: 400;
+  font-family: "ESRebondGrotesque";
+  src: url("/fonts/ES Rebond Grotesque/ESRebondGrotesqueTRIAL-Semibold.otf")
+    format("opentype");
+  font-weight: 600; /* Semibold */
   font-style: normal;
 }
 
-/* Sequel Sans Light Body */
 @font-face {
-  font-family: "Sequel Sans";
-  src: url("/fonts/Sequel Sans TTF/Sequel Sans Light Body.ttf");
-  font-weight: 300;
+  font-family: "ESRebondGrotesque";
+  src: url("/fonts/ES Rebond Grotesque/ESRebondGrotesqueTRIAL-Thin.otf")
+    format("opentype");
+  font-weight: 100; /* Thin */
   font-style: normal;
 }
 
-/* Sequel Sans Roman Body */
 @font-face {
-  font-family: "Sequel Sans";
-  src: url("/fonts/Sequel Sans TTF/Sequel Sans Roman Body.ttf");
-  font-weight: 200;
+  font-family: "Aeonik";
+  src: url("/fonts/Aeonik/Aeonik-Air.otf") format("opentype");
+  font-weight: 200; /* Air */
   font-style: normal;
 }
 
-/* Inter Black */
 @font-face {
-  font-family: "Inter";
-  src: url("/fonts/Inter/Inter-Black.ttf");
-  font-weight: 900;
+  font-family: "Aeonik";
+  src: url("/fonts/Aeonik/Aeonik-Black.otf") format("opentype");
+  font-weight: 900; /* Black */
   font-style: normal;
 }
 
-/* Inter Extra Bold */
 @font-face {
-  font-family: "Inter";
-  src: url("/fonts/Inter/Inter-ExtraBold.ttf");
-  font-weight: 800;
+  font-family: "Aeonik";
+  src: url("/fonts/Aeonik/Aeonik-Bold.otf") format("opentype");
+  font-weight: bold;
   font-style: normal;
 }
 
-/* Inter Bold */
 @font-face {
-  font-family: "Inter";
-  src: url("/fonts/Inter/Inter-Bold.ttf");
-  font-weight: 700;
+  font-family: "Aeonik";
+  src: url("/fonts/Aeonik/Aeonik-Light.otf") format("opentype");
+  font-weight: 300; /* Light */
   font-style: normal;
 }
 
-/* Inter Semi Bold */
 @font-face {
-  font-family: "Inter";
-  src: url("/fonts/Inter/Inter-SemiBold.ttf");
-  font-weight: 600;
+  font-family: "Aeonik";
+  src: url("/fonts/Aeonik/Aeonik-Medium.otf") format("opentype");
+  font-weight: 500; /* Medium */
   font-style: normal;
 }
 
-/* Inter Medium */
 @font-face {
-  font-family: "Inter";
-  src: url("/fonts/Inter/Inter-Medium.ttf");
-  font-weight: 500;
+  font-family: "Aeonik";
+  src: url("/fonts/Aeonik/Aeonik-Regular.otf") format("opentype");
+  font-weight: normal;
   font-style: normal;
 }
 
-/* Inter Regular */
 @font-face {
-  font-family: "Inter";
-  src: url("/fonts/Inter/Inter-Regular.ttf");
-  font-weight: 400;
-  font-style: normal;
-}
-
-/* Inter Light */
-@font-face {
-  font-family: "Inter";
-  src: url("/fonts/Inter/Inter-Light.ttf");
-  font-weight: 300;
-  font-style: normal;
-}
-
-/* Inter Extra Light */
-@font-face {
-  font-family: "Inter";
-  src: url("/fonts/Inter/Inter-ExtraLight.ttf");
-  font-weight: 200;
-  font-style: normal;
-}
-
-/* Inter Thin */
-@font-face {
-  font-family: "Inter";
-  src: url("/fonts/Inter/Inter-Thin.ttf");
-  font-weight: 100;
+  font-family: "Aeonik";
+  src: url("/fonts/Aeonik/Aeonik-Thin.otf") format("opentype");
+  font-weight: 100; /* Thin */
   font-style: normal;
 }
